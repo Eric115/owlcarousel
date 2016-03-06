@@ -1,0 +1,4 @@
+administer owl carousel presets:
+  title: 'Administer Owl Carousel Presets'
+  description: 'Create and modify presets for Owl Carousel slideshows.'
+  restrict access: false

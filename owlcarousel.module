@@ -4,21 +4,8 @@ use Drupal\Core\Template\Attribute;
 
 /**
  * @file
- *
- * @todo file docs
+ * Module file for Owl Carousel.
 */
-
-/**
- * Implements hook_permission().
- */
-function owlcarousel_permission() {
-  return array(
-    'administer owl carousel presets' => array(
-      'title' => t('Administer Owl Carousel presets'),
-      'description' => t('Create and modify presets for Owl Carousel slideshows.'),
-    ),
-  );
-}
 
 /**
  * Prepares variables for owl carousel rows templates.
@@ -51,32 +38,3 @@ function template_preprocess_views_owl_carousel(&$variables) {
   }
 
 }
-
-//function owlcarousel_libraries_info() {
-//  $library = drupal_get_path('module', 'owlcarousel');
-//  $libraries['owlcarousel'] = array(
-//    'name' => 'OWL Carousel',
-//    'version' => '',
-//    'files' => array(
-//      'js' => array($library . '/owl.carousel.min.js'),
-////      'css' => array($library . '/assets/owl.carousel.css'),
-//    ),
-//  );
-//
-//  return $libraries;
-//}
-
-//function owlcarousel_libraries_info() {
-//  return [
-//    'owlcarousel.jquery' => [
-//      'name' => t('OwlCarousel'),
-//      'vendor url' => '',
-//      'download url' => '',
-//      'files' => [
-//        'js' => [
-//          'owlcarousel.js' => [],
-//        ]
-//      ],
-//    ],
-//  ];
-//}
