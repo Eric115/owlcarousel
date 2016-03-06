@@ -1,9 +1,7 @@
 name: Owl Carousel
-description: '???.'
+description: 'A Drupal integration for the Owl Carousel JS library.'
 package: Custom
 type: module
-version: 1.0
+version: VERSION
 core: 8.x
 configure: owlcarousel.presets
-dependencies:
-  - libraries
